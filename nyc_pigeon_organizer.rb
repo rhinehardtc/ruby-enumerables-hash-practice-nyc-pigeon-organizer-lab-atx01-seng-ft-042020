@@ -6,6 +6,7 @@ def nyc_pigeon_organizer(data)
   data.each do |key, color|
     color.each do |descriptor, name|
       name.each do |name|
+        if 
         binding.pry
         
     by_name = color
