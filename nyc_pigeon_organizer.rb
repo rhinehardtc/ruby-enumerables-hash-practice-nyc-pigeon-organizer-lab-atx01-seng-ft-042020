@@ -3,7 +3,7 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   by_name = {}
-  data.reduce(:color) do |color|
+  data.each(:color) do |color|
     by_name = color
     binding.pry
   end
