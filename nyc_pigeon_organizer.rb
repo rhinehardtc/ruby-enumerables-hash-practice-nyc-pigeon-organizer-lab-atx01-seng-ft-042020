@@ -7,11 +7,11 @@ def nyc_pigeon_organizer(data)
     color.each do |descriptor, name|
       name.each do |name|
         
-        if !by_name[name]
+        if by_name[name] == false
           by_name[name] = {}
         end
         
-        if !by_name[name][key]
+        if by_name[name][key] == false
           by_name[name][key] = []
         end
         
