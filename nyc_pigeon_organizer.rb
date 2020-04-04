@@ -3,14 +3,14 @@ require 'pry'
 
 def nyc_pigeon_organizer(data)
   by_name = {}
-  data.each do |key, color|
-    color.each do |descriptor, name|
+  data.each do |key, value|
+    value.each do |descriptor, name|
       name.each do |name|
         
         if !by_name[name]
           by_name[name] = {}
         end
-        binding.pry
+        
         if !by_name[name][key]
           by_name[name][key] = []
         end
