@@ -9,8 +9,9 @@ def nyc_pigeon_organizer(data)
         
         if by_name[name] = false
           by_name[name] = {}
+        end
         
-        
+        if by_name[name]
     by_name = color
     
   end
