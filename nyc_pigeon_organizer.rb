@@ -15,8 +15,9 @@ def nyc_pigeon_organizer(data)
           by_name[name][key] = []
         end
         
-    by_name[name][key] = descriptor.to_s
-    
+        by_name[name][key] = descriptor.to_s
+      end
+    end
   end
   by_name
 end
