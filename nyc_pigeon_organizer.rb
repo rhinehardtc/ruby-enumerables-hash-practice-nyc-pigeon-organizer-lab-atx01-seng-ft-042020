@@ -1,3 +1,23 @@
+require 'pry'
+
+
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  by_name = {}
+  data.each do |key, value|
+    value.each do |descriptor, name|
+      name.each do |name|
+        
+        if !by_name[name]
+          by_name[name] = {}
+        end
+        
+        if !by_name[name][key]
+          by_name[name][key] = []
+        end
+        
+        by_name[name][key] << descriptor.to_s
+      end
+    end
+  end
+  by_name
 end
