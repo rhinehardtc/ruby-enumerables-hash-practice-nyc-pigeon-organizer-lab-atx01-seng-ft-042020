@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
         if !by_name[name]
           by_name[name] = {}
         end
-        
+        binding.pry
         if !by_name[name][key]
           by_name[name][key] = []
         end
