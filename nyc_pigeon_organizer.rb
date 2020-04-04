@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
       name.each do |name|
         
         if by_name[name] = false
-          by_name
+          by_name[name] = {}
         
         
     by_name = color
